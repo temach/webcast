@@ -47,7 +47,6 @@ class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         path, query_path, params = self.translate_path(self.path)
         if "target" in params:
             # this is a URL bounce-back
-            pdb.set_trace()
             webbrowser.open(params["target"][0], new=0)
             self.send_response(200)
             self.end_headers()

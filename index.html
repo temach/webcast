@@ -29,7 +29,7 @@ function updateQueryStringParameter(uri, key, value) {
 function submitUrlTarget(){
     var target_elem = document.getElementById('target');
     var target = target_elem.value;
-    var url = "http://192.168.1.10:8000";
+    var url = "http://192.168.1.10";
     var submit_url_query = updateQueryStringParameter(url, 'target', target);
     window.location = submit_url_query;
 }
